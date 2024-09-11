@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display:flex ;
+    z-index: 1;
+}
+.sidebar {
+    height: 100vh;
+    width: 15rem;
+    left: -300px;
+    background-color: rgb(125, 129, 129);
+    position: fixed;
+    top: 0;
+    transition: all 0.4s linear;
+}
+.sidebar:hover {
+    box-shadow: 0 0 14px rgb(49, 49, 49);
+}
+.sidebar  li {
+    list-style-type: none;
+    padding-top: 40px;
+    width: 12rem;
+    text-align: center;
+    z-index: 1;
+    
+}
+li a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    opacity: 1;
+}
+.sidebar i {
+    color: black;
+    opacity: 0.9;
+}
+li a:hover {
+  box-shadow: 0 0 7px rgb(51, 50, 50);
+}
+.right {
+ background-color: whitesmoke;
+ min-height:300px ;
+ width: 89rem;
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(195, 226, 243);
+    height: 280px;
+    width: 250px;
+    border-radius: 30px;
+    position: absolute;
+    left: 17rem;
+    top: 100px;
+}
+.card1 {
+    background-color:rgba(221, 227, 230, 0.884);
+    height: 280px;
+    width: 250px;
+    border-radius: 30px;
+    position: absolute;
+    left: 35rem;
+   top: 100px;
+}
+.card2 {
+    background-color:rgb(227, 255, 227);
+    height: 280px;
+    width: 250px;
+    border-radius: 30px;
+    position: absolute;
+    left: 52rem;
+   top: 100px;
+}
+
+/* card div settings */
+.card img {
+    height:"150px" 
+}
+.card img {
+    border-radius:20px 20px 0px 0px;
+    margin-top: 1px;
+}
+.card a {
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.card:hover {
+   box-shadow: 9px 9px 12px rgba(145, 141, 141, 0.747);
+   transform: scale(1.1);
+  }
+
+  /* card1 div settings */
+  .card1 img {
+    height:"150px" 
+}
+.card1 img {
+    border-radius:20px 20px 0px 0px;
+    margin-top: 1px;
+}
+.card1 a {
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.card1:hover {
+   box-shadow: 9px 9px 12px rgba(121, 120, 120, 0.747);
+   transform: scale(1.1);
+  }
+  /* card 2 seetting */
+  .card2 img {
+    height:"150px" 
+}
+.card2 img {
+    border-radius:20px 20px 0px 0px;
+    margin-top: 1px;
+}
+.card2 a {
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 15px;
+    margin-top: 2px;
+}
+.card2:hover {
+   box-shadow: 9px 10px 16px rgba(145, 141, 141, 0.747);
+   transform: scale(1.1);
+  }
+ .right h1 {
+  padding-left: 90px;
+  padding-top: 20px;
+  }
+  .right h1:hover {
+    text-shadow: 0 0 6px grey;
+    cursor: pointer;
+  }
+  .btn-1 {
+    color: rgb(29, 28, 28);
+    font-size: 30px;
+    font-weight: 20px;
+    position: absolute;
+    left: 30px;
+    line-height: 60px;
+    transition: all 0.4s linear;
+}
+.btn_two i {
+    color:white;
+    font-size: 22px;
+    line-height: 60px;
+    position: absolute;
+    left: 220px;
+    bottom: 460px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.4s linear;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ .btn-1 {
+    opacity: 0.8;
+}
+#check:checked ~ .sidebar .btn_two i {
+    opacity: 0.8;
+}
+.btn-1 i:hover {
+    font-size: 40px;
+    cursor: pointer;
+}
+.btn_two i:hover {
+    font-size: 30px;
+}
+.btn-1 i {
+    transition: all 0.4s linear;
+}
+
+
+
+/* Astore page */
+body {
+    background-color: gainsboro;
+}
+.ww {
+   margin-top:30px ; 
+   font-size: 40px;
+   font-family: monospace;
+   cursor: pointer;
+   color: olivedrab;
+}
+.ww h1:hover {
+    text-shadow: 0 0 6px grey;
+}
+.astore img {
+    height: 400px;
+    width: 400px;
+}
+.astore {
+    min-height: 500px;
+    width: 700px;
+    background-color: rgb(129, 188, 190);
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.astore img {
+    margin-top: 60px;
+    margin-left: 160px;
+    border-radius: 20px;
+}
+.astore p {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* hopper page */
+.ho {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(36, 46, 2, 0.801);
+    font-size: 40px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+body {
+  background-color: azure;
+}
+.hop {
+    min-height:600px ;
+    width: 600px;
+    background-color: rgba(226, 226, 52, 0.705);
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.hop img {
+    margin-top: 60px;
+    margin-left: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hop p {
+    text-align: center;
+    font-size: 20px;
+    margin: 40px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* babusartop pg */
+.www {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(14, 30, 32, 0.801);
+    font-size: 40px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.ba {
+    min-height:800px ;
+    width: 600px;
+    background-color: rgba(196, 196, 190, 0.705);
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+.ba img {
+    margin-top: 60px;
+    margin-left: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.ba p {
+    text-align: center;
+    font-size: 20px;
+    margin: 40px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
